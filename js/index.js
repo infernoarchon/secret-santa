@@ -2,7 +2,6 @@ window.onload = function() {
 
 
     $('.start-btn').on('click', function () {
-        console.log("you clicked start")
         $(".start-btn").hide();
         $(".container").css("display","block")
         playTrack()
