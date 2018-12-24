@@ -1,11 +1,18 @@
-///Hooray No JS :)
+window.onload = function() {
 
-/*
 
-========================================================
-A Loving Car with pure CSS,  Inspired Dribbble shot.
+    $('.start-btn').on('click', function () {
+        console.log("you clicked start")
+        $(".start-btn").hide();
+        $(".container").css("display","block")
+        playTrack()
+        $("body").addClass("color-change-5x")
+    });
 
-https://dribbble.com/shots/2869958-Loving-car
-========================================================
+}
 
-*/
+var playTrack = function() {
+    var audio = new Audio('./assets/icecreamloop.wav');
+    audio.play();
+    audio.loop=true;
+}
