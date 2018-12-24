@@ -12,7 +12,7 @@ window.onload = function() {
 }
 
 var playTrack = function() {
-    var audio = new Audio('./assets/icecreamloop.wav');
+    var audio = new Audio('./assets/icecreamloop2.mp3');
     audio.play();
     audio.loop=true;
 }
